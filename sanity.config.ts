@@ -3,6 +3,7 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {media} from 'sanity-plugin-media'
 import project from "./sanity/schemas/project-schema";
+import schemas from "./sanity/schemas";
 
 
 export const config = defineConfig({
@@ -22,5 +23,5 @@ export const config = defineConfig({
         })
 ],
 schema: {
-    types: [project]},
+    types: schemas},
     });
