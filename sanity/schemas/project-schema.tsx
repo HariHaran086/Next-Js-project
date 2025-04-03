@@ -18,16 +18,10 @@ const project = {
       },
     },
     {
-      title: "Genre",
-      name: "genre",
-      type: "string",
-      options: {
-        list: [
-          { title: "Sci-Fi", value: "sci-fi" },
-          { title: "Western", value: "western" },
-        ], // <-- predefined values
-        layout: "radio", // <-- defaults to 'dropdown'
-      },
+      title: "content",
+      name: "Content",
+      type: "array",
+      of: [{ type: "block" }],
     },
     {
       name: "description",
